@@ -27,6 +27,7 @@ class Body extends StatelessWidget {
             child: Padding(
           padding: const EdgeInsets.symmetric(horizontal: kDefaultPadding),
           child: GridView.builder(
+            physics: BouncingScrollPhysics(),
             gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
                 crossAxisCount: 2,
                 childAspectRatio: 0.75,
